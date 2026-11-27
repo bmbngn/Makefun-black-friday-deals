@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Friday — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="A deal finder of real Black Friday and Cyber Monday deals, each checked at its store on Nov 27, 2026, with sale price, usual price and an honest verdict.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/all">Bargain<span>Friday</span></a>
+    <p class="tagline">Real deals, checked at the store today — no inflated “was” prices.</p>
+    <p class="checked-line">Prices checked <strong id="checked-at">Nov 27, 2026</strong> · Sale runs through Cyber Monday, Nov 30</p>
+  </div>
+</header>
+
+<nav class="cats wrap" id="cats" aria-label="Categories"></nav>
+
+<main class="wrap">
+  <section class="controls" aria-label="Search and filters">
+    <input id="q" type="search" placeholder="Search a product, brand or store…" autocomplete="off">
+    <select id="store" aria-label="Filter by store">
+      <option value="">All stores</option>
+    </select>
+    <select id="discount" aria-label="Minimum discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+    <select id="maxprice" aria-label="Maximum price">
+      <option value="">Any price</option>
+      <option value="50">Under $50</option>
+      <option value="100">Under $100</option>
+      <option value="200">Under $200</option>
+      <option value="500">Under $500</option>
+    </select>
+    <select id="sort" aria-label="Sort deals">
+      <option value="discount">Biggest discount first</option>
+      <option value="saving">Biggest saving ($) first</option>
+      <option value="price-asc">Lowest price first</option>
+      <option value="price-desc">Highest price first</option>
+      <option value="name">Name A–Z</option>
+    </select>
+  </section>
+
+  <section class="stats" id="stats" aria-label="Summary"></section>
+
+  <section class="chart-box" aria-label="Discount distribution">
+    <h2>Where the discounts fall</h2>
+    <div id="chart"></div>
+    <p class="chart-note">Share of the deals shown, by discount size. Most of this year's real cuts land between 30% and 50% off.</p>
+  </section>
+
+  <section class="deals" id="deals" aria-live="polite"></section>
+  <p class="empty" id="empty" hidden>No deals match those filters. Try clearing the search or lowering the discount.</p>
+
+  <section class="method" aria-label="How prices were verified">
+    <h2>How every price was verified</h2>
+    <p>Each deal on this page was read on <strong>Nov 27, 2026</strong> from a Black Friday source that names the store — a deals roundup (CNN Underscored, TradingView/Benzinga, Slickdeals, Product Bible, 9to5Google, TechRadar) or the store's own Black Friday page (Nordstrom Rack, Best Buy's release). The source is named on every deal card, next to the time it was checked. A deal is listed only when a source showed the product, the store, the sale price and the usual price together.</p>
+    <p>The verdict on each card is honest: <strong>New low</strong> means the source tracked it as the lowest price it has seen; <strong>Strong deal</strong> is a real cut of 25% or more off the usual price; <strong>Routine sale</strong> is a genuine but small cut under 15%. Prices can move or sell out — the store link opens the store's search for that product so you can confirm the price before you buy.</p>
+    <p class="fine">Bargain Friday is an independent deal finder built for make.fun's Black Friday deal finder bounty. It is not affiliated with Amazon, Walmart, Best Buy, Target, Nordstrom Rack or HexClad, and it loads nothing from the network — every deal is data in this site's own files.</p>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p>Bargain Friday · Black Friday 2026 · All prices in US dollars, checked Nov 27, 2026.</p>
+</footer>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
